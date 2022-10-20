@@ -18,11 +18,10 @@ Currency Converter
 >- `CACHE_RATES_BANK_PATH` - ***Путь где мы будем хранить последние данные с сайта ЦБ***
 
 4. **Создадим таблицы в БД**
->>- `alembic revision -m="Initial Revision" --autogenerate`
+>- `alembic revision -m="Initial Revision" --autogenerate`
 >- ***Проверим миграции в папке ./alembic/versions/last_version***
->- ***Если все устраивает, применяем миграции командой***
->>- `alembic upgrade head`
+>- ***Если все устраивает, применяем миграции командой***: `alembic upgrade head`
 
-
-
-  
+5. **Запустим проект**
+>- ***cd ./src/***
+>- `uvicorn app:app --reload`
